@@ -1,0 +1,37 @@
+{
+  "info": {
+    "name": "TPI2 Blog - Leonel Galban",
+    "_postman_id": "tpi2-blog-collection",
+    "description": "Colecci\u00f3n b\u00e1sica de endpoints para probar el TPI II",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth - Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/auth/register",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"leo\",\n  \"email\": \"leo@example.com\",\n  \"password\": \"Password123\",\n  \"profile\": {\n    \"firstName\": \"Leonel\",\n    \"lastName\": \"Galban\"\n  }\n}"
+        }
+      }
+    }
+  ]
+}
